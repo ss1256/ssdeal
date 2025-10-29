@@ -1,0 +1,33 @@
+# ----------------------------
+# SSDeal Affiliate Website
+# GitHub Pages Safe .gitignore
+# ----------------------------
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Local configuration files (keep private)
+.env
+config.json
+credentials.txt
+apikeys.txt
+
+# Node or Python environments (if added later)
+node_modules/
+venv/
+__pycache__/
+
+# Build or cache directories
+dist/
+build/
+.cache/
+
+# Logs or backups
+*.log
+*.bak
+*.tmp
