@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Disclaimer — SSDeal</title>
+  <meta name="description" content="Affiliate disclaimer and privacy notes for SSDeal." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SSDeal</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a class="active" href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Affiliate Disclaimer & Privacy Notes</h1>
+
+    <p><strong>Affiliate disclosure:</strong> Some links on SSDeal are affiliate links. This means if you click a link and make a purchase, SSDeal may earn a commission at no extra cost to you. We only recommend products we believe are useful.</p>
+
+    <p><strong>No warranties:</strong> SSDeal provides information for general purposes only. We do not warrant merchant pricing or availability. Always confirm details on the merchant's site before purchasing.</p>
+
+    <p><strong>Privacy:</strong> This site does not collect personal payment or financial information — purchases happen on merchants' websites. If you want a privacy policy file or GDPR/CCPA compliance, consider adding a full privacy policy page and cookie consent mechanism.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this disclaimer? Contact: <a href="mailto:hello@ssdeal.example">hello@ssdeal.example</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SSDeal</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

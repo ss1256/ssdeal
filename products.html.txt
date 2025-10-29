@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — SSDeal</title>
+  <meta name="description" content="All product deals listed on SSDeal. Click to visit merchant (affiliate links)." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SSDeal</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>All Deals &amp; Products</h1>
+    <p>Click any item to go to the merchant page (affiliate link). We never collect payment — we link to merchant sites.</p>
+
+    <section class="grid">
+      <!-- Repeatable product card template -->
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Electronics" alt="Electronics" loading="lazy" />
+        <div class="card-body">
+          <h3>Wireless Headphones</h3>
+          <p>Up to 30 hours of battery, active noise cancellation.</p>
+          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Home" alt="Home" loading="lazy" />
+        <div class="card-body">
+          <h3>Air Fryer</h3>
+          <p>Compact and fast cooking with crisp results.</p>
+          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Fitness" alt="Fitness" loading="lazy" />
+        <div class="card-body">
+          <h3>Fitness Tracker</h3>
+          <p>Heart rate, sleep tracking, and coaching guides.</p>
+          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Fashion" alt="Fashion" loading="lazy" />
+        <div class="card-body">
+          <h3>Everyday Sneakers</h3>
+          <p>Comfortable soles and breathable material.</p>
+          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+        </div>
+      </article>
+
+      <!-- Add more cards as needed -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SSDeal</div>
+      <div class="footer-links">
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

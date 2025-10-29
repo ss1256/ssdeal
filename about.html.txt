@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — SSDeal</title>
+  <meta name="description" content="About SSDeal — mission and how we curate deals." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SSDeal</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a class="active" href="about.html">About</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About SSDeal</h1>
+    <p>SSDeal curates quality products and the best available deals across many categories. We test and review products where possible and select items that provide value.</p>
+
+    <h2>Our Values</h2>
+    <ul>
+      <li><strong>Transparency:</strong> We disclose affiliate relationships (see Disclaimer).</li>
+      <li><strong>Value:</strong> We prioritize products that offer quality and cost-effectiveness.</li>
+      <li><strong>User-first:</strong> Our content aims to help visitors make smarter buying decisions.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>For business inquiries, send email to: <a href="mailto:hello@ssdeal.example">hello@ssdeal.example</a> (replace with your real email).</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SSDeal</div>
+      <div class="footer-links">
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="products.html">Products</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
