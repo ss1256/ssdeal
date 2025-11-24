@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Affiliate Disclosure — SSDeal</title>
+  <meta name="description" content="Affiliate partnerships and transparency about how we monetize our recommendations." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.PNG" alt="SSDeal logo" />
+        <span>SSDeal</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- DISCLAIMER SECTION -->
+    <section class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Compliance first</p>
+        <h1>Affiliate Disclosure</h1>
+        <p>SSDeal works with multiple affiliate networks and programs.</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <section>
+        <h2>Affiliate Partnerships</h2>
+        <p>When you click an outbound link and buy something from a retailer, we may receive a commission at no extra cost to you. Affiliate relationships never influence which products we recommend or how we describe them.</p>
+      </section>
+
+      <section>
+        <h2>No Professional Advice</h2>
+        <p>Content on SSDeal is provided for general informational purposes. Always review product documentation and retailer terms to ensure a product meets your needs.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SSDeal</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buying Guides — SSDeal</title>
+  <meta name="description" content="In-depth buying guides and product reviews to help you find the best products." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.PNG" alt="SSDeal logo" />
+        <span>SSDeal</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- GUIDES SECTION -->
+    <section class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Research-backed picks</p>
+        <h1>Buying Guides &amp; Product Reviews</h1>
+        <p>In-depth research, comparisons, and honest recommendations to help you find the best products for your needs.</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <section>
+        <h2>Featured Guides</h2>
+        <p class="product-tag">Kitchen & Home</p>
+        <h3 style="font-size:1.4rem;margin:12px 0;">Best Kitchen Gadgets Under $50 (2025 Update)</h3>
+        <p>We tested 80+ affordable kitchen tools to find the ones that actually save time and improve your cooking. Includes air fryers, food processors, and specialty gadgets with real-world pros and cons.</p>
+        
+        <h4 style="margin-top:24px;">Buying Checklist: What Matters Under $50</h4>
+        <ul>
+          <li><strong>Material quality:</strong> Stainless steel blades, heat-resistant silicone, or BPA-free plastics prolong gadget life.</li>
+          <li><strong>Warranty length:</strong> Look for at least a 1-year warranty; many reputable brands offer extended coverage on registration.</li>
+          <li><strong>Storage footprint:</strong> Measure cabinets or counters before ordering.</li>
+          <li><strong>Cleaning process:</strong> Dishwasher-safe is ideal, but note which parts must be hand-washed.</li>
+          <li><strong>Power needs:</strong> Check the wattage for older circuits.</li>
+        </ul>
+
+        <div class="callout" style="margin-top:32px;">
+          <p>For under $50 you can dramatically streamline weekday cooking. Start with the gadget that fixes your biggest kitchen frustration. Have a gadget you swear by? <a href="contact.html">Email us</a>.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SSDeal</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
