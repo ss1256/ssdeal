@@ -12,32 +12,98 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">SSDeal</a>
+      <a class="brand" href="index.html">
+        <img src="logo.PNG" alt="SSDeal logo" />
+        <span>SSDeal</span>
+      </a>
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
+        <a href="guides.html">Guides</a>
         <a href="about.html">About</a>
         <a href="disclaimer.html">Disclaimer</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
+  <section class="policy-banner">
+    <div class="container">
+      <p><strong>Amazon Associates disclosure:</strong> As an Amazon Associate we earn from qualifying purchases. We follow the <a href="https://affiliate-program.amazon.com/help/operating/policies" target="_blank" rel="noopener">Program Policies</a> and disclose affiliate relationships on every page.</p>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Welcome to SSDeal</h1>
-        <p>Your one-stop hub for curated deals across categories — tech, home, fashion, travel, and more.</p>
-        <a class="btn-primary" href="products.html">Browse Deals</a>
+    <section class="hero home-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Curated savings</p>
+          <h1>Find deals vetted by real humans</h1>
+          <p>Your one-stop hub for curated deals across tech, home, fashion, and travel. Every pick is researched, price-checked, and accompanied by the context you need to buy with confidence.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="products.html">Browse Deals</a>
+            <a class="btn-secondary" href="guides.html">Read Guides</a>
+          </div>
+          <ul class="stat-grid">
+            <li><span>80+</span>Products reviewed</li>
+            <li><span>12</span>Categories monitored</li>
+            <li><span>24h</span>Average deal refresh</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="Person browsing curated products online" loading="lazy" />
+          <div class="hero-note">
+            <strong>Fresh picks weekly</strong>
+            Dual-layer editorial review keeps recommendations accurate.
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="guide-preview container">
+      <div>
+        <p class="product-tag">Latest Guide</p>
+        <h2>Best Kitchen Gadgets Under $50 — 2025 Update</h2>
+        <p>We tested dozens of prep tools, smart thermometers, and compact appliances to highlight five budget-friendly upgrades that actually earn their drawer space.</p>
+        <a class="btn-secondary" href="guide-kitchen-gadgets.html">Read the Guide</a>
+      </div>
+    </section>
+
+    <section class="trust-section container">
+      <div class="trust-card">
+        <span class="icon">🔍</span>
+        <h3>Transparent Monetization</h3>
+        <p>We state our affiliate relationships up front and only use Amazon-approved linking tools, satisfying the disclosure and formatting rules outlined in the <a href="https://affiliate-program.amazon.com/help/operating/policies" target="_blank" rel="noopener">Associates Program Policies</a>.</p>
+      </div>
+      <div class="trust-card">
+        <span class="icon">🧭</span>
+        <h3>Editorial Separation</h3>
+        <p>Deals go through an editorial checklist for quality, warranty, and verified reviews. Commission potential never determines placement.</p>
+      </div>
+      <div class="trust-card">
+        <span class="icon">🔐</span>
+        <h3>Data Respect</h3>
+        <p>We collect only aggregated analytics and route purchases through Amazon’s secure checkout. See our <a href="privacy.html">privacy page</a> for details.</p>
+      </div>
+    </section>
+
+    <section class="newsletter container">
+      <div>
+        <h3>Have a deal tip or category request?</h3>
+        <p>We crowdsource intel from savvy shoppers to keep SSDeal current. Send us a product you love (or want us to investigate) and we’ll add it to the review queue.</p>
+      </div>
+      <a class="btn-secondary" href="contact.html">Send a Tip</a>
     </section>
 
     <section class="featured container">
       <h2>Top Picks</h2>
       <div class="grid">
-        <!-- Feature 1 -->
         <article class="card">
-          <!--<img src="https://via.placeholder.com/400x250?text=Product+1" alt="Featured product 1" loading="lazy" /> -->
+          <figure class="card-media">
+            <img src="https://m.media-amazon.com/images/I/71g48dqH6TL._AC_SL1500_.jpg" alt="Vantrue N5 4K Dash Cam" loading="lazy" />
+          </figure>
           <div class="card-body">
             <h3>Car 4K Dash Cam </h3>
             <p>4K/2.5K Dash Cam Front and Rear, Dual Dash Camera for Cars, Included 64GB Card</p>
@@ -45,9 +111,10 @@
           </div>
         </article>
 
-        <!-- Feature 2 -->
         <article class="card">
-          <!--<img src="https://via.placeholder.com/400x250?text=Product+2" alt="Featured product 2" loading="lazy" /> -->
+          <figure class="card-media">
+            <img src="https://m.media-amazon.com/images/I/71g1RIFVQhL._AC_SL1500_.jpg" alt="Dual 4K dash cam bundle" loading="lazy" />
+          </figure>
           <div class="card-body">
             <h3>Car 4K + 4K Dash Cam</h3>
             <p>4K+4K Dash Cam Front and Rear, Free 128GB Card Included, 5.8GHz WiFi Dash Camera for Cars.</p>
@@ -55,9 +122,10 @@
           </div>
         </article>
 
-        <!-- Feature 3 -->
         <article class="card">
-           <!--<img src="https://via.placeholder.com/400x250?text=Product+3" alt="Featured product 3" loading="lazy" /> -->
+          <figure class="card-media">
+            <img src="https://m.media-amazon.com/images/I/61jM0QF1UnL._AC_SL1500_.jpg" alt="HP EliteBook 840 renewed laptop" loading="lazy" />
+          </figure>
           <div class="card-body">
             <h3>HP EliteBook -  Processor - i5 ram-16GB for $294</h3>
             <p>HP EliteBook 840 G7 14” FHD Intel Core i5-10310U 1.7GHz Quad Core, 16GB RAM, 512GB NVMe, Windows 11 Pro 64Bit, CAM (Renewed)</p>
@@ -71,7 +139,7 @@
       <h2>How SSDeal Works</h2>
       <ol>
         <li>We research and curate deals across many categories.</li>
-        <!--<li>We include affiliate links; if you buy, we may earn a commission.</li> -->
+        <li>We include affiliate links; if you click them and buy, we may earn a commission at no extra cost to you.</li>
         <li>We recommend only products we think are worth your time.</li>
       </ol>
     </section>
@@ -82,8 +150,10 @@
       <div>© <span id="year"></span> SSDeal</div>
       <div class="footer-links">
         <a href="disclaimer.html">Disclaimer</a>
+        <a href="privacy.html">Privacy</a>
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
