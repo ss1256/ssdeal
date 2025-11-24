@@ -1,0 +1,35 @@
+name: Auto Push Every Hour
+
+on:
+  schedule:
+    # Runs every hour (0 means every hour)
+    - cron: '0 * * * *'
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+
+jobs:
+  auto-push:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+      
+      - name: Check for changes and push
+        run: |
+          # Check if there are any uncommitted changes
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-commit: Automated hourly push $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin main
+            echo "Changes pushed successfully"
+          else
+            echo "No changes to commit"
+          fi
