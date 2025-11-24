@@ -4,47 +4,48 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SSDeal — Curated Deals Across Categories</title>
-  <meta name='impact-site-verification' value='7fd34138-44c7-4a1a-a19c-a53c08b76a32'><meta name='impact-site-verification' value='7fd34138-44c7-4a1a-a19c-a53c08b76a32'>
-  <meta name="description" content="Impact-Site-Verification: 7fd34138-44c7-4a1a-a19c-a53c08b76a32 SSDeal — curated deals on tech, fashion, home, travel, and more. Trusted affiliate recommendations and savings." />
+  <meta name='impact-site-verification' value='7fd34138-44c7-4a1a-a19c-a53c08b76a32'>
+  <meta name="description" content="SSDeal — curated deals on tech, fashion, home, travel, and more. Trusted affiliate recommendations and savings." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="#home">
         <img src="logo.PNG" alt="SSDeal logo" />
         <span>SSDeal</span>
       </a>
       <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="guides.html">Guides</a>
-        <a href="about.html">About</a>
-        <a href="disclaimer.html">Disclaimer</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#guides">Guides</a>
+        <a href="#about">About</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <section class="policy-banner">
-    <div class="container">
-      <p><strong>Grab the latest coupons and deals from different websites and save on every category you shop!</p>
-    </div>
-  </section>
-
   <main>
-    <section class="hero home-hero">
+    <!-- HOME SECTION -->
+    <section class="policy-banner">
+      <div class="container">
+        <p><strong>Grab the latest coupons and deals from different websites and save on every category you shop!</strong></p>
+      </div>
+    </section>
+
+    <section class="hero home-hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Curated savings</p>
           <h1>Find deals vetted by real humans</h1>
           <p>Your one-stop hub for curated deals across tech, home, fashion, and travel. Every pick is researched, price-checked, and accompanied by the context you need to buy with confidence.</p>
           <div class="hero-actions">
-            <a class="btn-primary" href="products.html">Browse Deals</a>
-            <a class="btn-secondary" href="guides.html">Read Guides</a>
+            <a class="btn-primary" href="#products">Browse Deals</a>
+            <a class="btn-secondary" href="#guides">Read Guides</a>
           </div>
           <ul class="stat-grid">
             <li><span>80+</span>Products reviewed</li>
@@ -67,7 +68,7 @@
         <p class="product-tag">Latest Guide</p>
         <h2>Best Kitchen Gadgets Under $50 — 2025 Update</h2>
         <p>We tested dozens of prep tools, smart thermometers, and compact appliances to highlight five budget-friendly upgrades that actually earn their drawer space.</p>
-        <a class="btn-secondary" href="guide-kitchen-gadgets.html">Read the Guide</a>
+        <a class="btn-secondary" href="#guides">Read the Guide</a>
       </div>
     </section>
 
@@ -87,9 +88,9 @@
     <section class="newsletter container">
       <div>
         <h3>Have a deal tip or category request?</h3>
-        <p>We crowdsource intel from savvy shoppers to keep SSDeal current. Send us a product you love (or want us to investigate) and we’ll add it to the review queue.</p>
+        <p>We crowdsource intel from savvy shoppers to keep SSDeal current. Send us a product you love (or want us to investigate) and we'll add it to the review queue.</p>
       </div>
-      <a class="btn-secondary" href="contact.html">Send a Tip</a>
+      <a class="btn-secondary" href="#contact">Send a Tip</a>
     </section>
 
     <section class="featured container">
@@ -100,7 +101,7 @@
             <img src="https://m.media-amazon.com/images/I/71g48dqH6TL._AC_SL1500_.jpg" alt="Vantrue N5 4K Dash Cam" loading="lazy" />
           </figure>
           <div class="card-body">
-            <h3>Car 4K Dash Cam </h3>
+            <h3>Car 4K Dash Cam</h3>
             <p>4K/2.5K Dash Cam Front and Rear, Dual Dash Camera for Cars, Included 64GB Card</p>
             <a class="btn-secondary" href="https://amzn.to/4hJw1J8" target="_blank" rel="noopener noreferrer">Buy Now</a>
           </div>
@@ -122,8 +123,8 @@
             <img src="https://m.media-amazon.com/images/I/61jM0QF1UnL._AC_SL1500_.jpg" alt="HP EliteBook 840 renewed laptop" loading="lazy" />
           </figure>
           <div class="card-body">
-            <h3>HP EliteBook -  Processor - i5 ram-16GB for $294</h3>
-            <p>HP EliteBook 840 G7 14” FHD Intel Core i5-10310U 1.7GHz Quad Core, 16GB RAM, 512GB NVMe, Windows 11 Pro 64Bit, CAM (Renewed)</p>
+            <h3>HP EliteBook - Processor - i5 ram-16GB for $294</h3>
+            <p>HP EliteBook 840 G7 14" FHD Intel Core i5-10310U 1.7GHz Quad Core, 16GB RAM, 512GB NVMe, Windows 11 Pro 64Bit, CAM (Renewed)</p>
             <a class="btn-secondary" href="https://amzn.to/4pdA5UJ" target="_blank" rel="noopener noreferrer">Buy Now</a>
           </div>
         </article>
@@ -138,23 +139,343 @@
         <li>We recommend only products we think are worth your time, regardless of which retailer offers the best price.</li>
       </ol>
     </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Product library</p>
+        <h1>All Deals &amp; Product Picks</h1>
+        <p>Grab the latest coupons and deals from different websites and save on every category you shop!</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <div class="callout">
+        <p><strong>Grab the latest coupons and deals from different websites and save on every category you shop!</strong></p>
+      </div>
+
+      <section class="grid product-grid">
+        <article class="card product-card">
+          <figure class="product-media">
+            <a href="https://amzn.to/4hJw1J8" target="_blank" rel="sponsored noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/71g48dqH6TL._AC_SL1500_.jpg" alt="Vantrue N5 4K Dash Cam front and rear" loading="lazy" width="400" height="250" />
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="product-tag">Automotive</div>
+            <h3>Vantrue N5 4K Dash Cam Bundle</h3>
+            <p>True 4K front capture plus 1080p rear protection, bundled with a 64 GB card so you can install and drive immediately.</p>
+            <ul>
+              <li>Supercapacitor power for extreme temps</li>
+              <li>Parking mode with smart motion detection</li>
+              <li>GPS logging for speed and location</li>
+            </ul>
+            <a class="btn-secondary" href="https://amzn.to/4hJw1J8" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <p class="product-meta">Price check: Nov 2025 • Avg rating 4.5★</p>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <figure class="product-media">
+            <a href="https://amzn.to/4nBzD13" target="_blank" rel="sponsored noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/71g1RIFVQhL._AC_SL1500_.jpg" alt="Dual-channel 4K dash cam with Wi-Fi" loading="lazy" width="400" height="250" />
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="product-tag">Automotive</div>
+            <h3>4K + 4K Dual Dash Cam Kit</h3>
+            <p>Records in 4K front and rear simultaneously and ships with a 128 GB card plus 5.8 GHz Wi-Fi for fast file transfers.</p>
+            <ul>
+              <li>Night vision with STARVIS sensor tech</li>
+              <li>Voice control for hands-free commands</li>
+              <li>Hardwire kit support for battery-safe parking mode</li>
+            </ul>
+            <a class="btn-secondary" href="https://amzn.to/4nBzD13" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <p class="product-meta">Price check: Nov 2025 • Avg rating 4.6★</p>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <figure class="product-media">
+            <a href="https://amzn.to/4pdA5UJ" target="_blank" rel="sponsored noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/61jM0QF1UnL._AC_SL1500_.jpg" alt="HP EliteBook 840 G7 Renewed" loading="lazy" width="400" height="250" />
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="product-tag">Tech</div>
+            <h3>HP EliteBook 840 G7 (Renewed)</h3>
+            <p>Business-class laptop with 10th-gen Intel Core i5, 16 GB RAM, and 512 GB NVMe storage—great for remote work setups.</p>
+            <ul>
+              <li>14-inch FHD display with anti-glare coating</li>
+              <li>Thunderbolt 3 + USB-C docking support</li>
+              <li>Windows 11 Pro preinstalled with warranty</li>
+            </ul>
+            <a class="btn-secondary" href="https://amzn.to/4pdA5UJ" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <p class="product-meta">Price check: Nov 2025 • Typically $294 refurbished</p>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <figure class="product-media">
+            <a href="https://amzn.to/3JzY9BZ" target="_blank" rel="sponsored noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/71hzlCMsZ-L._AC_SL1500_.jpg" alt="Hanes X-Temp short sleeve polo" loading="lazy" width="400" height="250" />
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="product-tag">Apparel</div>
+            <h3>Hanes Men's X-Temp Polo</h3>
+            <p>Moisture-wicking cotton blend polo that keeps its structure after repeated washes and is available in core office colors.</p>
+            <ul>
+              <li>X-Temp fabric adjusts to temperature</li>
+              <li>Tagless collar for itch-free wear</li>
+              <li>Extended sizes up to 5XL</li>
+            </ul>
+            <a class="btn-secondary" href="https://amzn.to/3JzY9BZ" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <p class="product-meta">Price check: Nov 2025 • Under $25 shipped</p>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <figure class="product-media">
+            <a href="https://www.amazon.com/dp/B0BJKXKF1K?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/61n7XOG-twL._AC_SL1500_.jpg" alt="Cosori 4-quart smart air fryer" loading="lazy" width="400" height="250" />
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="product-tag">Kitchen</div>
+            <h3>COSORI 4.0-Quart Smart Air Fryer</h3>
+            <p>Compact countertop fryer with rapid 360° heat circulation, ideal for two-person households that still want crispy texture.</p>
+            <ul>
+              <li>9 presets plus manual temperature control</li>
+              <li>Dishwasher-safe basket and crisper plate</li>
+              <li>App + voice control for scheduled cooks</li>
+            </ul>
+            <a class="btn-secondary" href="https://www.amazon.com/dp/B0BJKXKF1K?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <p class="product-meta">Price check: Nov 2025 • Frequently $89–$109</p>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <figure class="product-media">
+            <a href="https://www.amazon.com/dp/B0BGMKQ6M2?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/61dTtEYcBnL._AC_SL1500_.jpg" alt="Fitbit Inspire 3 fitness tracker" loading="lazy" width="400" height="250" />
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="product-tag">Fitness</div>
+            <h3>Fitbit Inspire 3</h3>
+            <p>Lightweight tracker covering heart rate, sleep stages, stress management, and guided workouts with 10-day battery life.</p>
+            <ul>
+              <li>Color touchscreen with always-on option</li>
+              <li>Connected GPS for accurate run mapping</li>
+              <li>6-month Fitbit Premium trial included</li>
+            </ul>
+            <a class="btn-secondary" href="https://www.amazon.com/dp/B0BGMKQ6M2?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <p class="product-meta">Price check: Nov 2025 • Avg rating 4.7★</p>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- GUIDES SECTION -->
+    <section id="guides" class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Research-backed picks</p>
+        <h1>Buying Guides &amp; Product Reviews</h1>
+        <p>In-depth research, comparisons, and honest recommendations to help you find the best products for your needs.</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <section>
+        <h2>Featured Guides</h2>
+        <p>Our guides combine hands-on testing, user review analysis, and price tracking to give you actionable buying advice you won't find in a simple product listing.</p>
+
+        <div style="margin-top:32px;">
+          <p class="product-tag">Kitchen & Home</p>
+          <h3 style="font-size:1.4rem;margin:12px 0;">Best Kitchen Gadgets Under $50 (2025 Update)</h3>
+          <p>We tested 80+ affordable kitchen tools to find the ones that actually save time and improve your cooking. Includes air fryers, food processors, and specialty gadgets with real-world pros and cons.</p>
+          
+          <h4 style="margin-top:24px;">Buying Checklist: What Matters Under $50</h4>
+          <ul>
+            <li><strong>Material quality:</strong> Stainless steel blades, heat-resistant silicone, or BPA-free plastics prolong gadget life.</li>
+            <li><strong>Warranty length:</strong> Look for at least a 1-year warranty; many reputable brands offer extended coverage on registration.</li>
+            <li><strong>Storage footprint:</strong> Measure cabinets or counters before ordering—especially for air fryers or kettles with large bases.</li>
+            <li><strong>Cleaning process:</strong> Dishwasher-safe is ideal, but note which parts must be hand-washed to avoid dulling blades or warping seals.</li>
+            <li><strong>Power needs:</strong> Some gadgets draw more amps than older circuits can handle; check the wattage if you're in a dorm/RV.</li>
+          </ul>
+
+          <div class="callout" style="margin-top:32px;">
+            <h4 style="margin-top:0;">Final Take</h4>
+            <p>For under $50 you can dramatically streamline weekday cooking. Start with the gadget that fixes your biggest kitchen frustration, and bookmark this guide—we refresh it quarterly as new gear launches.</p>
+            <p>Have a gadget you swear by? <a href="#contact">Email us</a> and we'll consider it for the next update.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="callout" style="margin-top:48px;">
+        <h2>How We Research</h2>
+        <p>Every guide starts with market research—we analyze hundreds of user reviews, compare specifications, track price history, and where possible, test products hands-on. We only recommend items that offer genuine value, and we update our guides regularly to reflect current availability and pricing.</p>
+      </section>
+
+      <section style="margin-top:48px;">
+        <h2>Request a Guide</h2>
+        <p>Have a product category you'd like us to research? <a href="#contact">Send us a suggestion</a> and we'll consider it for a future guide.</p>
+      </section>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Inside SSDeal</p>
+        <h1>About SSDeal</h1>
+        <p>We're an independent shopping resource helping busy people spot real value through transparent affiliate disclosures and rigorous research.</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <p>SSDeal is an independent shopping resource dedicated to helping busy people spot real value in an overwhelming marketplace. We monitor prices, track release cycles, and create buying guides that explain why a product is worth your attention before you click "buy".</p>
+
+      <section>
+        <h2>How We Work</h2>
+        <p>Every recommendation starts with research. We scan dozens of retailer catalogs, tap verified customer feedback, and whenever possible test products in-house or through a trusted reviewer network. Only products that meet our quality, reliability, and support criteria make it onto SSDeal.</p>
+        <ul>
+          <li><strong>Deal desk:</strong> Tracks price drops, coupons, and seasonal promotions daily.</li>
+          <li><strong>Editorial review:</strong> Confirms specs, warranty info, and standout features.</li>
+          <li><strong>Buyer guidance:</strong> Summarizes who each product is for and any trade-offs.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Editorial Standards</h2>
+        <p>We operate on three core values:</p>
+        <ul>
+          <li><strong>Transparency:</strong> Affiliate partnerships never influence placement. We disclose monetization clearly.</li>
+          <li><strong>Usefulness:</strong> Articles must deliver practical insight such as maintenance tips, sizing notes, or viable alternatives.</li>
+          <li><strong>Freshness:</strong> Listings are reviewed on a set cadence, and outdated deals are removed quickly.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Who We Serve</h2>
+        <p>SSDeal is for shoppers who want curated picks in tech, home, fashion, and travel without sifting through hundreds of tabs. Whether you need a budget-friendly laptop or a kitchen upgrade, we highlight products that balance performance, durability, and price.</p>
+      </section>
+
+      <section class="callout">
+        <h2>Questions or Recommendations?</h2>
+        <p>We welcome feedback and product suggestions. Head over to the <a href="#contact">Contact section</a> or email <a href="mailto:hello@ssdeal.example">hello@ssdeal.example</a> and we'll get back within two business days.</p>
+      </section>
+    </section>
+
+    <!-- DISCLAIMER SECTION -->
+    <section id="disclaimer" class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Compliance first</p>
+        <h1>Affiliate Disclosure &amp; Privacy Notes</h1>
+        <p>Grab the latest coupons and deals from different websites and save on every category you shop!</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <section>
+        <h2>Affiliate Partnerships</h2>
+        <p>SSDeal works with multiple affiliate networks and programs. When you click an outbound link and buy something from a retailer, we may receive a commission at no extra cost to you. Affiliate relationships never influence which products we recommend or how we describe them.</p>
+      </section>
+
+      <section>
+        <h2>No Professional Advice</h2>
+        <p>Content on SSDeal is provided for general informational purposes. While we strive for accuracy, we cannot guarantee that product specifications, pricing, or availability are error-free. Always review product documentation and retailer terms to ensure a product meets your needs.</p>
+      </section>
+
+      <section>
+        <h2>Privacy & Data</h2>
+        <p>SSDeal does not collect payment information. Purchases take place on third-party merchant sites. We may use basic analytics tools to understand site performance; these tools aggregate data and do not identify individual visitors.</p>
+      </section>
+    </section>
+
+    <!-- PRIVACY SECTION -->
+    <section id="privacy" class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Data practices</p>
+        <h1>Privacy &amp; Tracking Transparency</h1>
+        <p>Grab the latest coupons and deals from different websites and save on every category you shop!</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <section>
+        <h2>Information We Collect</h2>
+        <ul>
+          <li><strong>Site analytics:</strong> We use privacy-friendly analytics to understand visit counts, page popularity, and device types. Data is aggregated and does not include names, emails, or precise locations.</li>
+          <li><strong>Emails you send us:</strong> When you email <a href="mailto:hello@ssdeal.example">hello@ssdeal.example</a> we store the message solely to respond.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>SSDeal is intended for users aged 16 and older. We do not knowingly collect information from children; if you believe we have, email <a href="mailto:privacy@ssdeal.example">privacy@ssdeal.example</a> so we can delete it.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions about privacy? Email <a href="mailto:privacy@ssdeal.example">privacy@ssdeal.example</a> or use our <a href="#contact">contact section</a>.</p>
+      </section>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="page-hero" style="margin-top:48px;">
+      <div class="container">
+        <p class="eyebrow">Get in touch</p>
+        <h1>Contact SSDeal</h1>
+        <p>Questions about a recommendation, want to pitch a deal, or need to report an issue? We reply to every message within two business days.</p>
+      </div>
+    </section>
+
+    <section class="container flow">
+      <p>We want SSDeal to reflect what real shoppers need. If you have deal tips, would like us to review a product category, or notice an issue with a link, reach out using any of the options below.</p>
+
+      <section>
+        <h2>General Inquiries & Feedback</h2>
+        <p>Email <a href="mailto:hello@ssdeal.example">hello@ssdeal.example</a> and we'll respond within two business days.</p>
+      </section>
+
+      <section>
+        <h2>Partnership Requests</h2>
+        <p>Brands and PR teams can pitch launch news or review units at <a href="mailto:partners@ssdeal.example">partners@ssdeal.example</a>. We only cover products that fit our editorial standards and reserve the right to decline sponsorships that could introduce bias.</p>
+      </section>
+
+      <section>
+        <h2>Report an Issue</h2>
+        <ul>
+          <li>Broken affiliate link or pricing error</li>
+          <li>Out-of-stock deal that should be removed</li>
+          <li>Accessibility problems with the site</li>
+        </ul>
+        <p>Flag it via <a href="mailto:support@ssdeal.example">support@ssdeal.example</a> so we can fix it quickly.</p>
+      </section>
+
+      <section class="callout">
+        <h2>Submit a Deal Tip</h2>
+        <p>Spot a discount we should cover? Send the product name, retailer link, and why it's a standout value. If we feature it, we'll credit you in the article (with your permission).</p>
+      </section>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year"></span> SSDeal</div>
       <div class="footer-links">
-        <a href="disclaimer.html">Disclaimer</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // small script: update year and enable mobile toggle
+    // Update year and enable mobile toggle
     document.getElementById('year').textContent = new Date().getFullYear();
     document.querySelector('.menu-toggle').addEventListener('click', () => {
       document.querySelector('.main-nav').classList.toggle('open');
