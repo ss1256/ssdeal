@@ -10,60 +10,162 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">SSDeal</a>
+      <a class="brand" href="index.html">
+        <img src="logo.PNG" alt="SSDeal logo" />
+        <span>SSDeal</span>
+      </a>
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a class="active" href="products.html">Products</a>
+        <a href="guides.html">Guides</a>
         <a href="about.html">About</a>
         <a href="disclaimer.html">Disclaimer</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <main class="container">
-    <h1>All Deals &amp; Products</h1>
-    <p>Click any item to go to the merchant page (affiliate link). We never collect payment — we link to merchant sites.</p>
+  <section class="policy-banner">
+    <div class="container">
+      <p><strong>Grab the latest coupons and deals from different websites and save on every category you shop!</p>
+    </div>
+  </section>
 
-    <section class="grid">
-      <!-- Repeatable product card template -->
-      <article class="card">
-        <!-- <img src="https://via.placeholder.com/400x250?text=Electronics" alt="Electronics" loading="lazy" /> -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Product library</p>
+      <h1>All Deals &amp; Product Picks</h1>
+      <p>Every item below links directly to Amazon. We never collect payment info—checkout happens on Amazon’s secure site.</p>
+    </div>
+  </section>
+
+  <main class="container flow">
+    <div class="callout">
+      <p><strong>Grab the latest coupons and deals from different websites and save on every category you shop!</p>
+    </div>
+
+    <section class="grid product-grid">
+      <article class="card product-card">
+        <figure class="product-media">
+          <a href="https://amzn.to/4hJw1J8" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="https://m.media-amazon.com/images/I/71g48dqH6TL._AC_SL1500_.jpg" alt="Vantrue N5 4K Dash Cam front and rear" loading="lazy" width="400" height="250" />
+          </a>
+        </figure>
         <div class="card-body">
-          <h3>Hanes Men’s T Shirt</h3>
-          <p>Hanes Men’s X-Temp Short Sleeve Polo Shirt, Midweight Men's Shirt</p>
-          <a class="btn-secondary" href="https://amzn.to/3JzY9BZ" target="_blank" rel="noopener noreferrer">View Deal</a>
+          <div class="product-tag">Automotive</div>
+          <h3>Vantrue N5 4K Dash Cam Bundle</h3>
+          <p>True 4K front capture plus 1080p rear protection, bundled with a 64&nbsp;GB card so you can install and drive immediately.</p>
+          <ul>
+            <li>Supercapacitor power for extreme temps</li>
+            <li>Parking mode with smart motion detection</li>
+            <li>GPS logging for speed and location</li>
+          </ul>
+          <a class="btn-secondary" href="https://amzn.to/4hJw1J8" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+          <p class="product-meta">Price check: Nov 2025 • Avg rating 4.5★</p>
         </div>
       </article>
 
-      <article class="card">
-        <!-- <img src="https://via.placeholder.com/400x250?text=Home" alt="Home" loading="lazy" /> -->
+      <article class="card product-card">
+        <figure class="product-media">
+          <a href="https://amzn.to/4nBzD13" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="https://m.media-amazon.com/images/I/71g1RIFVQhL._AC_SL1500_.jpg" alt="Dual-channel 4K dash cam with Wi-Fi" loading="lazy" width="400" height="250" />
+          </a>
+        </figure>
         <div class="card-body">
-          <h3>Air Fryer</h3>
-          <p>Compact and fast cooking with crisp results.</p>
-          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+          <div class="product-tag">Automotive</div>
+          <h3>4K + 4K Dual Dash Cam Kit</h3>
+          <p>Records in 4K front and rear simultaneously and ships with a 128&nbsp;GB card plus 5.8&nbsp;GHz Wi-Fi for fast file transfers.</p>
+          <ul>
+            <li>Night vision with STARVIS sensor tech</li>
+            <li>Voice control for hands-free commands</li>
+            <li>Hardwire kit support for battery-safe parking mode</li>
+          </ul>
+          <a class="btn-secondary" href="https://amzn.to/4nBzD13" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+          <p class="product-meta">Price check: Nov 2025 • Avg rating 4.6★</p>
         </div>
       </article>
 
-      <article class="card">
-        <!-- <img src="https://via.placeholder.com/400x250?text=Fitness" alt="Fitness" loading="lazy" />-->
+      <article class="card product-card">
+        <figure class="product-media">
+          <a href="https://amzn.to/4pdA5UJ" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="https://m.media-amazon.com/images/I/61jM0QF1UnL._AC_SL1500_.jpg" alt="HP EliteBook 840 G7 Renewed" loading="lazy" width="400" height="250" />
+          </a>
+        </figure>
         <div class="card-body">
-          <h3>Fitness Tracker</h3>
-          <p>Heart rate, sleep tracking, and coaching guides.</p>
-          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+          <div class="product-tag">Tech</div>
+          <h3>HP EliteBook 840 G7 (Renewed)</h3>
+          <p>Business-class laptop with 10th-gen Intel Core&nbsp;i5, 16&nbsp;GB RAM, and 512&nbsp;GB NVMe storage—great for remote work setups.</p>
+          <ul>
+            <li>14‑inch FHD display with anti-glare coating</li>
+            <li>Thunderbolt 3 + USB‑C docking support</li>
+            <li>Windows 11 Pro preinstalled with warranty</li>
+          </ul>
+          <a class="btn-secondary" href="https://amzn.to/4pdA5UJ" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+          <p class="product-meta">Price check: Nov 2025 • Typically $294 refurbished</p>
         </div>
       </article>
 
-      <article class="card">
-        <!-- <img src="https://via.placeholder.com/400x250?text=Fashion" alt="Fashion" loading="lazy" />-->
+      <article class="card product-card">
+        <figure class="product-media">
+          <a href="https://amzn.to/3JzY9BZ" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="https://m.media-amazon.com/images/I/71hzlCMsZ-L._AC_SL1500_.jpg" alt="Hanes X-Temp short sleeve polo" loading="lazy" width="400" height="250" />
+          </a>
+        </figure>
         <div class="card-body">
-          <h3>Everyday Sneakers</h3>
-          <p>Comfortable soles and breathable material.</p>
-          <a class="btn-secondary" href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener noreferrer">View Deal</a>
+          <div class="product-tag">Apparel</div>
+          <h3>Hanes Men’s X-Temp Polo</h3>
+          <p>Moisture-wicking cotton blend polo that keeps its structure after repeated washes and is available in core office colors.</p>
+          <ul>
+            <li>X-Temp fabric adjusts to temperature</li>
+            <li>Tagless collar for itch-free wear</li>
+            <li>Extended sizes up to 5XL</li>
+          </ul>
+          <a class="btn-secondary" href="https://amzn.to/3JzY9BZ" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+          <p class="product-meta">Price check: Nov 2025 • Under $25 shipped</p>
         </div>
       </article>
 
-      <!-- Add more cards as needed -->
+      <article class="card product-card">
+        <figure class="product-media">
+          <a href="https://www.amazon.com/dp/B0BJKXKF1K?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="https://m.media-amazon.com/images/I/61n7XOG-twL._AC_SL1500_.jpg" alt="Cosori 4-quart smart air fryer" loading="lazy" width="400" height="250" />
+          </a>
+        </figure>
+        <div class="card-body">
+          <div class="product-tag">Kitchen</div>
+          <h3>COSORI 4.0-Quart Smart Air Fryer</h3>
+          <p>Compact countertop fryer with rapid 360° heat circulation, ideal for two-person households that still want crispy texture.</p>
+          <ul>
+            <li>9 presets plus manual temperature control</li>
+            <li>Dishwasher-safe basket and crisper plate</li>
+            <li>App + voice control for scheduled cooks</li>
+          </ul>
+          <a class="btn-secondary" href="https://www.amazon.com/dp/B0BJKXKF1K?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+          <p class="product-meta">Price check: Nov 2025 • Frequently $89–$109</p>
+        </div>
+      </article>
+
+      <article class="card product-card">
+        <figure class="product-media">
+          <a href="https://www.amazon.com/dp/B0BGMKQ6M2?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">
+            <img src="https://m.media-amazon.com/images/I/61dTtEYcBnL._AC_SL1500_.jpg" alt="Fitbit Inspire 3 fitness tracker" loading="lazy" width="400" height="250" />
+          </a>
+        </figure>
+        <div class="card-body">
+          <div class="product-tag">Fitness</div>
+          <h3>Fitbit Inspire 3</h3>
+          <p>Lightweight tracker covering heart rate, sleep stages, stress management, and guided workouts with 10-day battery life.</p>
+          <ul>
+            <li>Color touchscreen with always-on option</li>
+            <li>Connected GPS for accurate run mapping</li>
+            <li>6‑month Fitbit Premium trial included</li>
+          </ul>
+          <a class="btn-secondary" href="https://www.amazon.com/dp/B0BGMKQ6M2?tag=ssdeal-20" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+          <p class="product-meta">Price check: Nov 2025 • Avg rating 4.7★</p>
+        </div>
+      </article>
     </section>
   </main>
 
@@ -72,7 +174,10 @@
       <div>© <span id="year"></span> SSDeal</div>
       <div class="footer-links">
         <a href="disclaimer.html">Disclaimer</a>
+        <a href="privacy.html">Privacy</a>
         <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
