@@ -38,6 +38,7 @@
         <h2>Information We Collect</h2>
         <ul>
           <li><strong>Site analytics:</strong> We use privacy-friendly analytics to understand visit counts, page popularity, and device types.</li>
+          <li><strong>Affiliate & tracking partners:</strong> We work with third-party affiliate and attribution partners (for example, Impact Tech, Inc. — <a href="https://impact.com" target="_blank" rel="noopener noreferrer">Impact.com</a>) to track referrals, clicks, and conversions when you click our affiliate links. These partners may place cookies or similar identifiers on your device. For details on Impact's data handling, see their Data Protection Agreement: <a href="https://impact.com/legal/Data_Protection_Agreement.pdf" target="_blank" rel="noopener noreferrer">https://impact.com/legal/Data_Protection_Agreement.pdf</a>.</li>
           <li><strong>Emails you send us:</strong> When you email us, we store the message solely to respond.</li>
         </ul>
       </section>
@@ -63,6 +64,13 @@
     document.querySelector('.menu-toggle').addEventListener('click', () => {
       document.querySelector('.main-nav').classList.toggle('open');
     });
+  </script>
+  <script>
+    // Respect cookie consent stored by index page
+    (function(){
+      try{ var saved = localStorage.getItem('ssdeal_consent'); }catch(e){ var saved = null }
+      if(!saved){ document.querySelector('.footer-links').insertAdjacentHTML('beforebegin','<p style="color:var(--muted);font-size:0.9rem;margin-bottom:12px;">Manage cookie preferences on the homepage to control affiliate tracking.</p>'); }
+    })();
   </script>
 </body>
 </html>
