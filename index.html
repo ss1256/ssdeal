@@ -35,7 +35,7 @@
     <section id="home" class="featured container" style="padding-top:36px;">
       <h2>Top Picks</h2>
       <div class="grid">
-        <article class="card">
+        <article class="card" data-added="2025-12-03">
           <figure class="card-media">
             <img src="https://i5.walmartimages.com/seo/Eureka-Airspeed-Bagless-Lightweight-Vacuum-Cleaner-2nd-PL_16446322077_1.jpg" alt="Eureka Airspeed Bagless Lightweight Vacuum Cleaner" loading="lazy" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x250?text=Image+Unavailable';" />
           </figure>
@@ -53,7 +53,7 @@
             <p class="product-meta">Black Friday 2025 • Affiliate Link</p>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-added="2025-12-03">
           <figure class="card-media">
             <img src="logo.PNG" alt="Vantrue N5 4K Dash Cam" loading="lazy" />
           </figure>
@@ -65,7 +65,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-added="2025-12-03">
           <figure class="card-media">
             <img src="logo.PNG" alt="Dual 4K dash cam bundle" loading="lazy" />
           </figure>
@@ -78,7 +78,7 @@
         </article>
 
         <!-- HP EliteBook removed from Top Picks -->
-              <article class="card product-card">
+              <article class="card product-card" data-added="2025-12-03">
                 <figure class="product-media">
                   <a href="https://trackcm.com/5kL/eJnC" target="_blank" rel="sponsored noopener noreferrer">
                     <img src="logo.PNG" alt="Disney+ Hulu Black Friday Deal" loading="lazy" width="400" height="250" />
@@ -100,7 +100,7 @@
                 </div>
               </article>
 
-        <article class="card">
+        <article class="card" data-added="2025-12-03">
           <figure class="card-media">
             <img src="logo.PNG" alt="Instant Pot Duo Plus 9-in-1" loading="lazy" />
           </figure>
@@ -118,7 +118,7 @@
             <p class="product-meta">Amazon Affiliate Link • Compare prices before purchasing</p>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-added="2025-12-03">
           <figure class="card-media">
             <a href="https://amzn.to/4rts8fM" target="_blank" rel="sponsored noopener noreferrer">
               <img src="logo.PNG" alt="Frying Pan Set 10-piece" loading="lazy" />
@@ -138,7 +138,7 @@
             <p class="product-meta">Promo code: W37I2TUL • Affiliate Link</p>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-added="2025-12-03">
           <figure class="card-media">
             <a href="https://amzn.to/48ee2Yi" target="_blank" rel="sponsored noopener noreferrer">
               <img src="images/tilswall.jpg" alt="Tilswall Paint Sprayer" loading="lazy" onerror="this.onerror=null;this.src='logo.PNG';" />
@@ -535,6 +535,23 @@
       if(!saved){ banner.style.display='flex'; }
       accept.addEventListener('click', function(e){ e.preventDefault(); setConsent('accepted'); });
       reject.addEventListener('click', function(e){ e.preventDefault(); setConsent('rejected'); });
+    })();
+  </script>
+  <script>
+    // Auto-prune Top Picks older than 7 days
+    (function(){
+      try{
+        const MS_PER_DAY = 24*60*60*1000;
+        const today = new Date();
+        const cards = document.querySelectorAll('#home .grid > article.card');
+        cards.forEach(card => {
+          const d = card.getAttribute('data-added');
+          if(!d) return; // keep if unknown
+          const added = new Date(d + 'T00:00:00');
+          const diff = Math.floor((today - added) / MS_PER_DAY);
+          if(diff > 7){ card.remove(); }
+        });
+      }catch(e){ console.warn('Top Picks prune error', e); }
     })();
   </script>
 </body>
